@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="geojson_repair",
-    version="0.1.2",
+    version="0.1.3",
     author="Jacob Rosbrow",
     author_email="jake@rosbrow.org",
     description="Repair utilities for geojson objects",
@@ -18,5 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"geojson_repair": "geojson_repair"}
+    package_dir={"geojson_repair": "geojson_repair"},
+    install_requires=["numpy"]
 )
